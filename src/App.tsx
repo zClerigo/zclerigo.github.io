@@ -380,13 +380,13 @@ function App() {
                 {
                   title: "DramaBrew",
                   description: "Mobile app that lets you talk to any character in any scenario.",
-                  image: `/DramaBrew.png`,
+                  image: `${import.meta.env.BASE_URL}DramaBrew.png`,
                   link: "https://github.com/zClerigo/DramaBrew",
                 },
                 {
                   title: "Hairstyle Helper",
                   description: "Analyzes your hair type and provides advice on maintenance.",
-                  image: "/api/placeholder/400/200",
+                  image: `${import.meta.env.BASE_URL}placeholder.png`,
                   link: "https://github.com/zClerigo/hairstyle-helper",
                 },
               ].map((project) => (
