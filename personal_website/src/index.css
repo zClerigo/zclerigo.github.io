@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --primary: 79 70 229; /* indigo-600 */
+  --primary-foreground: 255 255 255;
+}
+
+.dark {
+  --primary: 99 102 241; /* indigo-500 */
+  --primary-foreground: 255 255 255;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
