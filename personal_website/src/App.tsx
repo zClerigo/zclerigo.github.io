@@ -301,7 +301,7 @@ function App() {
               <div className={`md:w-1/2 flex justify-center fade-in ${isLoaded ? 'visible' : ''}`} style={{ transitionDelay: '0.6s' }}>
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#db924c] transition-all duration-500 hover:border-white">
                   <img
-                    src="/profile-pic.jpg"
+                    src={`${import.meta.env.BASE_URL}profile-pic.jpg`}
                     alt="Zidanni Clerigo"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
@@ -339,7 +339,7 @@ function App() {
                 "PostgreSQL",
                 "Git",
                 "Godot",
-              ].map((skill, index) => (
+              ].map((skill) => (
                 <div
                   key={skill}
                   className={`bg-[#261b25] p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 text-center border border-[#db924c]/20 hover:border-[#db924c]/40 hover:scale-105 fade-in stagger-item`}
@@ -367,20 +367,20 @@ function App() {
                 {
                   title: "NJ-Track",
                   description: "2nd place winner @ HackRU Fall 2024. Allows vehicle conductors to manage the locations of passengers.",
-                  image: "/NJ-Track.png",
+                  image: `${import.meta.env.BASE_URL}NJ-Track.png`,
                   link: "https://github.com/zClerigo/nj-track",
                 },
                 {
                   title: "Sharky",
                   description:
                     "Best Web Application winner @ Fungi Studio Hackathon 2025. SMMT that strives for virality in each post.",
-                  image: "/sharky.png",
+                  image: `${import.meta.env.BASE_URL}sharky.png`,
                   link: "https://github.com/zClerigo/sharky",
                 },
                 {
                   title: "DramaBrew",
                   description: "Mobile app that lets you talk to any character in any scenario.",
-                  image: "/DramaBrew.png",
+                  image: `/DramaBrew.png`,
                   link: "https://github.com/zClerigo/DramaBrew",
                 },
                 {
